@@ -1,0 +1,51 @@
+{
+  "name": "cordova-plugin-kecleon",
+  "version": "0.1.0",
+  "description": "Prevent and detect screenshots and screen recording in Cordova Android apps.",
+  "main": "www/kecleon.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "plugin.xml",
+    "www/",
+    "src/",
+    "types/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "cordova": {
+    "id": "cordova-plugin-kecleon",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "screenshot",
+    "screen-recording",
+    "flag-secure",
+    "privacy"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "0.1.0": {
+        "cordova": ">=12.0.0",
+        "cordova-android": ">=15.0.0"
+      }
+    }
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/spec/**/*.test.js"
+    ]
+  }
+}

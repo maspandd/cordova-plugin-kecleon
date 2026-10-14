@@ -1,0 +1,23 @@
+{
+  "name": "kecleon-example",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Manual QA app for cordova-plugin-kecleon.",
+  "scripts": {
+    "setup": "cordova prepare android",
+    "build": "cordova build android",
+    "android": "cordova run android"
+  },
+  "devDependencies": {
+    "cordova-android": "^15.1.0",
+    "cordova-plugin-kecleon": "file:../cordova-plugin-kecleon"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-kecleon": {}
+    }
+  }
+}

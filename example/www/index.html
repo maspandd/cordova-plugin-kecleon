@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: content:;">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <title>Kecleon Example</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <main>
+        <h1>Kecleon</h1>
+        <p class="secret">Secret: 4111 2222 3333 4444</p>
+
+        <section class="buttons">
+            <button id="btn-enable">Enable</button>
+            <button id="btn-disable">Disable</button>
+            <button id="btn-status">Status</button>
+            <button id="btn-clear">Clear log</button>
+        </section>
+
+        <pre id="log" aria-live="polite"></pre>
+    </main>
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

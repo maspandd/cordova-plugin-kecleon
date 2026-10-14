@@ -1,0 +1,5 @@
+node_modules/
+example/platforms/
+example/plugins/
+example/package-lock.json
+.DS_Store

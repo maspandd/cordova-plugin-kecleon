@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-kecleon-tests"
+        version="0.1.0">
+    <name>Kecleon Tests</name>
+    <license>MIT</license>
+
+    <dependency id="cordova-plugin-kecleon" url=".." />
+
+    <js-module src="tests.js" name="tests" />
+</plugin>
