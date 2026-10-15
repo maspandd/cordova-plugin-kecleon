@@ -36,9 +36,20 @@
     }
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "npm test"
   },
+  "author": "maspand",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maspandd/cordova-plugin-kecleon.git",
+    "directory": "cordova-plugin-kecleon"
+  },
+  "homepage": "https://github.com/maspandd/cordova-plugin-kecleon#readme",
+  "bugs": {
+    "url": "https://github.com/maspandd/cordova-plugin-kecleon/issues"
+  },
   "devDependencies": {
     "jest": "^29.7.0"
   },

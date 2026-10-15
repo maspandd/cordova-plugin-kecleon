@@ -9,14 +9,24 @@ Prevent and detect screenshots and screen recording in Cordova **Android** apps.
 
 ## Install
 
-The plugin isn't on npm yet. Clone the [repository](https://github.com/maspandd/cordova-plugin-kecleon)
-and add the plugin folder:
-
 ```bash
-cordova plugin add path/to/cordova-plugin-kecleon/cordova-plugin-kecleon
+cordova plugin add cordova-plugin-kecleon@0.1.0
 ```
 
-Once it's published on npm, this will work instead: `cordova plugin add cordova-plugin-kecleon`.
+### OutSystems 11 (MABS 12+)
+
+In the wrapper module's **Extensibility Configurations**, reference the npm package and pin an
+exact version, so every build of every app gets the same plugin:
+
+```json
+{
+    "plugin": {
+        "identifier": "cordova-plugin-kecleon@0.1.0"
+    }
+}
+```
+
+To upgrade, change the version, republish the wrapper, then republish the apps that use it.
 
 The plugin turns on Kotlin for the Android build (`GradlePluginKotlinEnabled`) and adds the
 `DETECT_SCREEN_CAPTURE` and `DETECT_SCREEN_RECORDING` permissions. Both are normal
