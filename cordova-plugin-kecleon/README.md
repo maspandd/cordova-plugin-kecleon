@@ -4,8 +4,8 @@
 
 Prevent and detect screenshots and screen recording in Cordova **Android** apps.
 
-- Android 9 – 17 (minSdk 28, built against API 36), written in Kotlin
-- Requires `cordova-android >= 15`
+- Android 9 – 17 (minSdk 28, compiles against API 35 or later), written in Kotlin
+- Requires `cordova-android >= 14` (OutSystems MABS 12 or later)
 
 ## Install
 

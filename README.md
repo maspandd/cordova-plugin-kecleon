@@ -18,7 +18,7 @@ await Kecleon.disable();                                  // allow capture again
 
 ## At a glance
 
-- **Platform:** Android 9 – 17 (API 28–37), written in Kotlin, needs `cordova-android >= 15`
+- **Platform:** Android 9 – 17 (API 28–37), written in Kotlin, needs `cordova-android >= 14` (MABS 12+)
 - **Blocking:** uses Android's `FLAG_SECURE`, which works on every supported version
 - **Detection:** the `screenshot` event works on Android 14+, and recording detection on Android 15+
 - **API:** Promise-based, with TypeScript types included
