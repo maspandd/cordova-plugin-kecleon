@@ -33,10 +33,10 @@ await Kecleon.disable();                                  // allow capture again
 cordova plugin add cordova-plugin-kecleon@0.1.0
 ```
 
-**OutSystems 11 (MABS 12+):** put this in the wrapper module's Extensibility Configurations:
+**OutSystems 11 (MABS 12+):** put this in the wrapper module's Extensibility Configurations. It uses the universal schema:
 
 ```json
-{ "plugin": { "identifier": "cordova-plugin-kecleon@0.1.0" } }
+{ "buildConfigurations": { "cordova": { "source": { "npm": "cordova-plugin-kecleon@0.1.0" } } } }
 ```
 
 ## Repository layout

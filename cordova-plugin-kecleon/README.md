@@ -15,16 +15,24 @@ cordova plugin add cordova-plugin-kecleon@0.1.0
 
 ### OutSystems 11 (MABS 12+)
 
-In the wrapper module's **Extensibility Configurations**, reference the npm package and pin an
-exact version, so every build of every app gets the same plugin:
+In the wrapper module's **Extensibility Configurations**, reference the npm package with the
+universal schema, which MABS 12 and later require. Pin an exact version, so every build of every app gets
+the same plugin:
 
 ```json
 {
-    "plugin": {
-        "identifier": "cordova-plugin-kecleon@0.1.0"
+    "buildConfigurations": {
+        "cordova": {
+            "source": {
+                "npm": "cordova-plugin-kecleon@0.1.0"
+            }
+        }
     }
 }
 ```
+
+MABS 12 doesn't support the older Cordova-based form (`"plugin": { "url" | "identifier" | "resource" }`),
+and Service Studio flags it as a deprecated schema.
 
 To upgrade, change the version, republish the wrapper, then republish the apps that use it.
 
